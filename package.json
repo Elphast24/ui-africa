@@ -1,0 +1,26 @@
+{
+  "name": "ui-africa",
+  "version": "1.0.0",
+  "description": "Inventory of african themed UI components",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elphast24/ui-africa.git"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui-library",
+    "design-system",
+    "africa"
+  ],
+  "author": "elphast-saint",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elphast24/ui-africa/issues"
+  },
+  "homepage": "https://github.com/Elphast24/ui-africa#readme"
+}
