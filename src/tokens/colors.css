@@ -1,0 +1,177 @@
+/* ==========================================================================
+   ui-africa — Global Color Tokens (src/tokens/colors.css)
+   
+   Three cultural palettes + neutrals + semantic aliases.
+   All values are CSS custom properties on :root for zero-runtime theming.
+   ========================================================================== */
+
+:root {
+
+  /* ====================================================================
+     1. KENTE CLOTH PALETTE (Ghana)
+     Inspired by the vibrant strip-woven textiles of the Ashanti people.
+     Primary use: CTAs, highlights, premium accents.
+     ==================================================================== */
+
+  /* Gold — the signature Kente thread */
+  --africa-kente-gold:          #D4A017;
+  --africa-kente-gold-light:    #E8C547;
+  --africa-kente-gold-dark:     #A67C00;
+
+  /* Emerald — the green strip */
+  --africa-kente-emerald:       #2E8B57;
+  --africa-kente-emerald-light: #3CB371;
+  --africa-kente-emerald-dark:  #1B5E38;
+
+  /* Royal Blue — the indigo strip */
+  --africa-kente-royal:         #1E3A8A;
+  --africa-kente-royal-light:   #3B5FC0;
+  --africa-kente-royal-dark:    #142761;
+
+  /* Crimson — the red strip */
+  --africa-kente-crimson:       #B22222;
+  --africa-kente-crimson-light: #DC3545;
+  --africa-kente-crimson-dark:  #8B1A1A;
+
+  /* Black — the grounding thread */
+  --africa-kente-black:         #1A1A1A;
+
+
+  /* ====================================================================
+     2. BOGOLAN / MUDCLOTH PALETTE (Mali)
+     Inspired by hand-dyed cotton using fermented mud and plant dyes
+     by the Bamana people. Primary use: earthy surfaces, text, warmth.
+     ==================================================================== */
+
+  /* Charcoal — the deep mud dye */
+  --africa-bogolan-charcoal:    #2C2C2C;
+
+  /* Deep Brown — aged mudcloth base */
+  --africa-bogolan-deep-brown:  #3E2723;
+
+  /* Ochre — yellow mud dye */
+  --africa-bogolan-ochre:       #CC7722;
+  --africa-bogolan-ochre-light: #E09440;
+  --africa-bogolan-ochre-dark:  #995511;
+
+  /* Cream — undyed cotton */
+  --africa-bogolan-cream:       #F5F0E8;
+  --africa-bogolan-cream-dark:  #E8DFD0;
+
+  /* Terracotta — fired clay accent */
+  --africa-bogolan-terracotta:  #C45A3C;
+
+  /* Rust — oxidized iron tone */
+  --africa-bogolan-rust:        #8B4513;
+
+  /* Sand — sun-bleached earth */
+  --africa-bogolan-sand:        #D4C4A8;
+
+
+  /* ====================================================================
+     3. AFRICAN SAVANNAH PALETTE
+     Inspired by the grasslands, sunsets, and skies of the Serengeti
+     and Maasai Mara. Primary use: gradients, backgrounds, warmth.
+     ==================================================================== */
+
+  /* Amber — golden grass */
+  --africa-savannah-amber:       #F59E0B;
+  --africa-savannah-amber-light: #FCD34D;
+  --africa-savannah-amber-dark:  #D97706;
+
+  /* Sunset — horizon glow */
+  --africa-savannah-sunset:       #EA580C;
+  --africa-savannah-sunset-light: #FB923C;
+  --africa-savannah-sunset-dark:  #C2410C;
+
+  /* Earth — dry soil */
+  --africa-savannah-earth:       #78350F;
+  --africa-savannah-earth-light: #92400E;
+
+  /* Sky — clear afternoon */
+  --africa-savannah-sky:         #0EA5E9;
+  --africa-savannah-sky-light:   #7DD3FC;
+
+  /* Grass — green season */
+  --africa-savannah-grass:       #65A30D;
+  --africa-savannah-grass-dark:  #4D7C0F;
+
+  /* Dust — dry season haze */
+  --africa-savannah-dust:        #D6C9A6;
+
+  /* Warm White — morning light */
+  --africa-savannah-warm-white:  #FFFBEB;
+
+
+  /* ====================================================================
+     4. NEUTRAL TONES
+     Warm-tinted grays that harmonize with the cultural palettes
+     rather than cold blue-grays.
+     ==================================================================== */
+
+  --africa-neutral-50:  #FAFAF9;
+  --africa-neutral-100: #F5F5F4;
+  --africa-neutral-200: #E7E5E4;
+  --africa-neutral-300: #D6D3D1;
+  --africa-neutral-400: #A8A29E;
+  --africa-neutral-500: #78716C;
+  --africa-neutral-600: #57534E;
+  --africa-neutral-700: #44403C;
+  --africa-neutral-800: #292524;
+  --africa-neutral-900: #1C1917;
+
+
+  /* ====================================================================
+     5. SEMANTIC ALIASES
+     Map cultural colors to UI intent. Consumers can override these
+     to re-theme without touching the cultural palettes above.
+     ==================================================================== */
+
+  /* Primary — Kente Gold */
+  --africa-primary:       var(--africa-kente-gold);
+  --africa-primary-hover: var(--africa-kente-gold-dark);
+  --africa-primary-light: var(--africa-kente-gold-light);
+
+  /* Secondary — Kente Emerald */
+  --africa-secondary:       var(--africa-kente-emerald);
+  --africa-secondary-hover: var(--africa-kente-emerald-dark);
+
+  /* Accent — Bogolan Ochre */
+  --africa-accent:       var(--africa-bogolan-ochre);
+  --africa-accent-hover: var(--africa-bogolan-ochre-dark);
+
+  /* Danger — Kente Crimson */
+  --africa-danger:       var(--africa-kente-crimson);
+  --africa-danger-hover: var(--africa-kente-crimson-dark);
+
+  /* Surfaces */
+  --africa-surface:      var(--africa-bogolan-cream);
+  --africa-surface-dark: var(--africa-bogolan-charcoal);
+
+  /* Text */
+  --africa-text:         var(--africa-neutral-900);
+  --africa-text-inverse: var(--africa-neutral-50);
+  --africa-text-muted:   var(--africa-neutral-500);
+
+  /* Focus Ring */
+  --africa-focus-ring:   var(--africa-kente-gold);
+
+
+  /* ====================================================================
+     6. CULTURAL SHADOW TOKENS
+     Tinted shadows that match each palette's warmth.
+     ==================================================================== */
+
+  --africa-shadow-sm: 0 1px 2px rgba(26, 26, 26, 0.08);
+  --africa-shadow-md: 0 4px 6px -1px rgba(26, 26, 26, 0.1),
+                      0 2px 4px -2px rgba(26, 26, 26, 0.1);
+  --africa-shadow-lg: 0 10px 15px -3px rgba(26, 26, 26, 0.1),
+                      0 4px 6px -4px rgba(26, 26, 26, 0.1);
+  --africa-shadow-xl: 0 20px 25px -5px rgba(26, 26, 26, 0.1),
+                      0 8px 10px -6px rgba(26, 26, 26, 0.1);
+
+  /* Palette-tinted elevation shadows */
+  --africa-shadow-kente:    0 4px 14px rgba(212, 160, 23, 0.35);
+  --africa-shadow-bogolan:  0 4px 14px rgba(62, 39, 35, 0.30);
+  --africa-shadow-savannah: 0 4px 14px rgba(245, 158, 11, 0.30);
+}
